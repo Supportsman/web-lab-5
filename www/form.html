@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация в спортзале</title>
+</head>
+<body>
+    <h1>Регистрация в спортзале</h1>
+    <form action="process.php" method="POST">
+        <p><label>Имя:</label><br><input type="text" name="name" required></p>
+        <p><label>Дата рождения:</label><br><input type="date" name="birth_date" required></p>
+        <p><label>Тариф:</label><br>
+            <select name="tariff" required>
+                <option value="Разовый">Разовый</option>
+                <option value="Месячный">Месячный</option>
+                <option value="Годовой">Годовой</option>
+                <option value="Студенческий">Студенческий</option>
+            </select>
+        </p>
+        <p><label><input type="checkbox" name="personal_trainer" value="1"> Персональный тренер</label></p>
+        <p><label>Время посещения:</label><br>
+            <label><input type="radio" name="visit_time" value="Утро (8:00-12:00)" required> Утро</label><br>
+            <label><input type="radio" name="visit_time" value="День (12:00-17:00)"> День</label><br>
+            <label><input type="radio" name="visit_time" value="Вечер (17:00-22:00)"> Вечер</label>
+        </p>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+    <p><a href="index.php">Посмотреть все записи</a></p>
+</body>
+</html>
