@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once "db.php";
 require_once "GymRegistration.php";
 
