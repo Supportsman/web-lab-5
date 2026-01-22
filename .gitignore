@@ -1,0 +1,6 @@
+﻿**/db_data/
+**/.env
+**/*.log
+*.tmp
+.DS_Store
+Thumbs.db
